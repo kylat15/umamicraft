@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { useNavigation,NavigationProp } from '@react-navigation/native';
 
 // Define the type for the stack navigator's parameters
@@ -12,7 +12,7 @@ type RootStackParamList = {
 type RegisterNavigationProp = NavigationProp<RootStackParamList, 'Register'>;
 type LoginNavigationProp = NavigationProp<RootStackParamList, 'Home'>;
 
-const LoginPage: React.FC = () => {
+const HomePage: React.FC = () => {
   const [username, setUsername] = React.useState('');
   const [password, setPassword] = React.useState('');
 
@@ -26,7 +26,6 @@ const LoginPage: React.FC = () => {
 
   // Go to Home Screen
   const handleLogin = () => {
-    Alert.alert('Login Successful', 'User registered successfully!');
     navigation2.navigate('Home');
   };
 
@@ -56,8 +55,8 @@ const LoginPage: React.FC = () => {
       />
       </View>
       
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttontext} >Log In</Text>
+      <TouchableOpacity style={styles.button} onPress={() => { /* Implement login logic here */ }}>
+        <Text style={styles.buttontext}>Log In</Text>
       </TouchableOpacity>
 
 
@@ -86,7 +85,7 @@ const LoginPage: React.FC = () => {
       <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#841D06', letterSpacing: 2 }}>Forgot Password?</Text>
       <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: 10}}>
         <Text style={{color: 'black'}}>Don't have an account yet?</Text>
-        <Text style={{color: '#841D06'}} onPress={handleRegister}> Register</Text>
+        <Text style={{color: '#841D06'}} onPress={handleLogin}> Register</Text>
       </View>
     </View>
   );
@@ -146,4 +145,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default LoginPage;
+export default HomePage;

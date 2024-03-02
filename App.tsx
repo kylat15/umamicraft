@@ -5,8 +5,9 @@ import LoadingSplash from './src/LoadingSplash';
 import Onboarding0 from './src/Onboarding0'; // Import the Onboarding0 component
 import Onboarding1 from './src/Onboarding1' // Import the Onboarding1 component
 import Onboarding2 from './src/Onboarding2'; // Import the Onboarding2 component
-import Login from './src/Login'; // Import the LoginScreen component
-import Register from './src/Register'; // Import the RegisterScreen component
+import Login from './src/Login'; // Import the Login component
+import Register from './src/Register'; // Import the Register component
+import Home from './src/Home'; // Import the Home component
 import { useFonts } from "expo-font";
 
 const Stack = createStackNavigator();
@@ -41,6 +42,7 @@ const App: React.FC = () => {
         <Stack.Screen name="Onboarding2" component={Onboarding2} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
