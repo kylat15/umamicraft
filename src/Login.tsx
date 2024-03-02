@@ -33,7 +33,7 @@ const LoginPage: React.FC = () => {
   return (
 
     <View style={styles.container}>
-        <Image source={require('../assets/login.png')} style={{ width: 150, height: 28}} />
+      <Image source={require('../assets/login.png')} style={{ width: 150, height: 28}} />
       <Image source={require('../assets/welcome.png')} style={{ width: 320, height: 110}} />
       <Image source={require('../assets/jang-jorim.png')} style={{ width: 200, height: 200 }} />
       <Image source={require('../assets/irasshaimase.png')} style={{ width: 228.36, height: 50, marginBottom: 20 }} />
