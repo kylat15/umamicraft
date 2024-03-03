@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     fontSize: 48,
     lineHeight: 50,
     fontFamily: FontFamily.hiraKakuStdNW8,
-    color: Color.colorWhite,
+    color: Color.white,
     textAlign: "left",
   },
   onboarding3: {
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 932,
     overflow: "hidden",
-    backgroundColor: Color.colorWhite,
+    backgroundColor: Color.white,
   },
   nextButton: {
     position: "absolute",
@@ -137,11 +137,11 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 5,
-    backgroundColor: Color.colorGray,
+    backgroundColor: Color.gray,
     marginHorizontal: 5,
   },
   activeBullet: {
-    backgroundColor: Color.colorMaroon,
+    backgroundColor: Color.maroon,
   },
 });
 

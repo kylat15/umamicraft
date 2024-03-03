@@ -11,13 +11,16 @@ export const FontFamily = {
     hiraKakuProW3: "HiraKakuPro-W3",
     poppinsRegular: "Poppins-Regular",
     poppinsBold: "Poppins-Bold",
+    candalRegular: "Candal-Regular"
   };
   
   /* Colors */
   export const Color = {
-    colorMaroon: "#841d06",
-    colorWhite: "#fff",
-    colorBlack: "#000",
-    colorGray: "#dedede",
+    maroon: "#841d06",
+    yellow: "#F3D9A4",
+    white: "#fff",
+    black: "#000",
+    gray: "#dedede",
+    darkGray: "#6F6F6F",
   };
   

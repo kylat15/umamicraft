@@ -89,7 +89,7 @@ const Onboarding0: React.FC<Onboarding0Props> = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Color.colorWhite,
+    backgroundColor: Color.white,
   },
   onboarding1: {
     flex: 1,
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   tag1: {
-    width: 400,
+    width: 380,
     height: 300,
     top: 155,
     position: "absolute",
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontFamily: FontFamily.interMedium,
     textAlign: "center",
-    color: Color.colorWhite,
+    color: Color.white,
     left: "50%",
     position: "absolute",
   },
@@ -185,11 +185,11 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 5,
-    backgroundColor: Color.colorGray,
+    backgroundColor: Color.gray,
     marginHorizontal: 5,
   },
   activeBullet: {
-    backgroundColor: Color.colorMaroon,
+    backgroundColor: Color.maroon,
   },
 });
 

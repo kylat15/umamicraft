@@ -8,6 +8,7 @@ import Onboarding1 from './src/Onboarding1' // Import the Onboarding1 component
 import Onboarding2 from './src/Onboarding2'; // Import the Onboarding2 component
 import Login from './src/Login'; // Import the Login component
 import Register from './src/Register'; // Import the Register component
+import HomeScreen from "./src/Home";
 import { useFonts } from "expo-font";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesome } from '@expo/vector-icons';
@@ -17,9 +18,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 function Home() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
-    </View>
+    <HomeScreen />
   );
 }
 
@@ -64,6 +63,7 @@ function MyTabs() {
         tabBarStyle: { position: 'absolute', height: 65 },
         tabBarLabelStyle: { height: 10 },
         tabBarActiveTintColor: '#841D06',
+        tabBarHideOnKeyboard: true,
       }}
     >
       <Tab.Screen

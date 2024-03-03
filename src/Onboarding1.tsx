@@ -77,7 +77,7 @@ const Onboarding1: React.FC<Onboarding1Props> = ({ navigation }) => {
 const styles = StyleSheet.create({
   title: {
     textAlign: "center",
-    color: Color.colorMaroon,
+    color: Color.maroon,
     left: "50%",
     position: "absolute",
   },
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     lineHeight: 45,
     fontSize: 48,
     top: "50%",
-    color: Color.colorMaroon,
+    color: Color.maroon,
   },
   recipes: {
     marginTop: -288,
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     lineHeight: 45,
     fontSize: 48,
     top: "50%",
-    color: Color.colorMaroon,
+    color: Color.maroon,
   },
   unleash: {
     marginLeft: -62,
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.interMedium,
   },
   onboarding2: {
-    backgroundColor: Color.colorWhite,
+    backgroundColor: Color.white,
     flex: 1,
     width: "100%",
     height: "100%",
@@ -163,11 +163,11 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 5,
-    backgroundColor: Color.colorWhite,
+    backgroundColor: Color.white,
     marginHorizontal: 5,
   },
   activeBullet: {
-    backgroundColor: Color.colorMaroon,
+    backgroundColor: Color.maroon,
   },
 });
 

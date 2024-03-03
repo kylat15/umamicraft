@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from "../Home";
+import HomeScreen from "../Home";
 import Recipes from "../Recipes";
 import Profile from "../Profile";
 import Favorites from "../Favorites";
@@ -26,7 +26,7 @@ export default function TabNavigation() {
             >
               <Tab.Screen
                 name="Home"
-                component={Home}
+                component={HomeScreen}
                 options={{
                   tabBarLabel: ({ color }) => (
                   <Text style = {{ color:color, fontSize:12, marginTop:-7}}>Home</Text>),
